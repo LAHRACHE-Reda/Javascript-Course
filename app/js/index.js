@@ -4,16 +4,20 @@ require('styles/main.scss');
 import $ from 'jquery';
 import { log, logTitle } from 'logger';
 /* your imports */
-logTitle('Variables')
+logTitle('Arrays')
 /* coding examples */
 
 
-var name = "Reda";             // string
-var age = 23;                  // number
-var hasDriverLicence = true;   // Boolean
-var empty = undefined;         // variable qui ne contient rien
+var famille = ["Simo", "Tali", "Reda", "Nadou", "Ayou"];
 
-log(name+" --> Type : "+typeof name);
-log(age+" --> Type : "+typeof age);
-log(hasDriverLicence+" --> Type : "+typeof hasDriverLicence);
-log(empty+" --> Type : "+typeof empty);
+log(famille);
+
+log("La taille du tableau = "+famille.length);
+
+for(var member of famille){
+    log(member);
+}
+
+famille.forEach(function(n, index){    // callback
+    log(index + " - " + n);
+});
