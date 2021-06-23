@@ -1,10 +1,11 @@
 # Javascript Course
 
----- Je partage mon apprentisage de Javascript pour le cours de amigosCode ----
+## My learning for Javascript
 
-![idea  (2)](https://user-images.githubusercontent.com/40702606/76909562-6d3e9f80-68a3-11ea-8217-ba49ac27cd14.png)
+![javascript-minimalism-wallpaper-preview](https://user-images.githubusercontent.com/58349137/123169411-2d387600-d471-11eb-9c5d-f4001135ddf2.jpg)
 
-## Installation
+## Prerequis
+### Installation
 
 1. [Install node] (https://nodejs.org/en/)
 3. npm install
