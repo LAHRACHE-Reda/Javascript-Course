@@ -4,20 +4,27 @@ require('styles/main.scss');
 import $ from 'jquery';
 import { log, logTitle } from 'logger';
 /* your imports */
-logTitle('Arrays')
+logTitle('Function')
 /* coding examples */
 
 
-var famille = ["Simo", "Tali", "Reda", "Nadou", "Ayou"];
+function addNumbers(a, b) {   // fonction qui prends 2 param et retourne la somme 
+    return a + b;
+};
 
-log(famille);
+log("La somme est : "+addNumbers(5,3));   // la somme de 5 et 3
 
-log("La taille du tableau = "+famille.length);
+var person = {
+    name: "LAHRACHE",
+    prenom: "Reda",
+    age: 23
+};
 
-for(var member of famille){
-    log(member);
-}
+// fcts prédifinie
+log("keys de person : "+Object.keys(person));  
+log("values de person : "+Object.values(person));
 
-famille.forEach(function(n, index){    // callback
-    log(index + " - " + n);
-});
+log("string majuscule".toUpperCase());
+log("STRING MINISCULE".toLowerCase());
+log("LAHRACHE Reda".endsWith("Reda"));
+log("LAHRACHE Reda".startsWith("Reda"));
